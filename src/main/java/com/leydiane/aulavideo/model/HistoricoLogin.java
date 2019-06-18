@@ -1,13 +1,16 @@
-package model;
+package com.leydiane.aulavideo.model;
 
 import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -18,14 +21,14 @@ import javax.persistence.Table;
 public class HistoricoLogin implements Serializable{
 	
 	@Id
-	@GeneratedValue(generator = "SEQ_USER", strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(generator = "SEQ_HIST", strategy = GenerationType.SEQUENCE)
 	private Long id;
 	
 	@Column(name="data")
 	private Date data;
 	
-	@OneToOne
-	@Column(name="data")
+	@OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id")
 	private Usuario user;
 	
 	public HistoricoLogin() {

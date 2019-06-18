@@ -1,8 +1,8 @@
-package service;
+package com.leydiane.aulavideo.service;
 
 import java.util.List;
 
-import model.Usuario;
+import com.leydiane.aulavideo.model.Usuario;
 
 public interface UserService {
 

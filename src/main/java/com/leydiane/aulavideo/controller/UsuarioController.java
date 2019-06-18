@@ -1,4 +1,4 @@
-package controller;
+package com.leydiane.aulavideo.controller;
 
 import javax.validation.Valid;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import model.Usuario;
-import service.UserService;
+import com.leydiane.aulavideo.model.Usuario;
+import com.leydiane.aulavideo.service.UserService;
 
 @Controller
 @RequestMapping("/user")
@@ -29,6 +29,7 @@ public class UsuarioController {
 			mv.addObject(userService.findAll());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		
@@ -41,7 +42,7 @@ public class UsuarioController {
 	public ModelAndView add(Usuario user) {
 		
 		ModelAndView mv = new ModelAndView("/userAdd");
-		mv.addObject("post", user);
+		mv.addObject("user", user);
 		
 		return mv;
 	}

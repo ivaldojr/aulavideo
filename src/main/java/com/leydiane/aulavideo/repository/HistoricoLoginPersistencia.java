@@ -1,12 +1,12 @@
-package repository;
+package com.leydiane.aulavideo.repository;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import model.HistoricoLogin;
-import model.Usuario;
+import com.leydiane.aulavideo.model.HistoricoLogin;
+import com.leydiane.aulavideo.model.Usuario;
 
 @Repository
 public interface HistoricoLoginPersistencia extends JpaRepository<HistoricoLogin, Long>{

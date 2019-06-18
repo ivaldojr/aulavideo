@@ -1,4 +1,4 @@
-package controller;
+package com.leydiane.aulavideo.controller;
 
 import javax.validation.Valid;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import model.HistoricoLogin;
-import service.HistoricoLoginService;
+import com.leydiane.aulavideo.model.HistoricoLogin;
+import com.leydiane.aulavideo.service.HistoricoLoginService;
 
 @Controller
 @RequestMapping("/histlogin")

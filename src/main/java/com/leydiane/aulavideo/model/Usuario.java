@@ -1,4 +1,4 @@
-package model;
+package com.leydiane.aulavideo.model;
 
 import java.io.Serializable;
 
@@ -12,11 +12,11 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="tbl_usuario")
-@SequenceGenerator(name = "SEQ_USER", sequenceName = "SEQ_USER", initialValue=1, allocationSize=1)
+@SequenceGenerator(name = "SEQ_USUARIO", sequenceName = "SEQ_USUARIO", initialValue=1, allocationSize=1)
 public class Usuario implements Serializable{
 
 	@Id
-	@GeneratedValue(generator = "SEQ_USER", strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_USUARIO")
 	private Long id;
 	
 	@Column(name="name")

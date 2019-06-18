@@ -1,4 +1,4 @@
-package controller;
+package com.leydiane.aulavideo.controller;
 
 import javax.validation.Valid;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import model.Link;
-import service.LinkService;
+import com.leydiane.aulavideo.model.Link;
+import com.leydiane.aulavideo.service.LinkService;
 
 @Controller
 @RequestMapping("/link")

@@ -1,13 +1,13 @@
-package service;
+package com.leydiane.aulavideo.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import model.HistoricoLogin;
-import model.Usuario;
-import repository.HistoricoLoginPersistencia;
+import com.leydiane.aulavideo.model.HistoricoLogin;
+import com.leydiane.aulavideo.model.Usuario;
+import com.leydiane.aulavideo.repository.HistoricoLoginPersistencia;
 
 @Service
 public class HistoricoLoginImpl implements HistoricoLoginService{

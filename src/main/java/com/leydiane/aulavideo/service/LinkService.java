@@ -1,8 +1,8 @@
-package service;
+package com.leydiane.aulavideo.service;
 
 import java.util.List;
 
-import model.Link;
+import com.leydiane.aulavideo.model.Link;
 
 public interface LinkService {
 

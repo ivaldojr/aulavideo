@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <style>
+body {
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size:100%;
+}
+</style></br></br>
+
+<!--FORMULÁRIO DE CADASTRO-->
+
+<div class="content">
+<div id="cadastro">
+  <form method="post" th:object="${user}" th:action="@{/save}"> 
+    <h1><font color=#778899>Cadastro</h1></font>
+
+    <p> 
+      <label for="nome_cad">Nome completo*</label>
+      <input th:field="*{name}" id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Digite seu nome" />
+    </p>
+
+    <p> 
+      <label for="cpf">CPF*</label>
+      <input th:field="*{cpf}" id="cpf" name="cpf" required="required" type="password" placeholder="Digite seu cpf"/>
+    </p>
+
+    <p> 
+      <label for="email_cad">E-mail*</label>
+      <input th:field="*{email}" id="email_cad" name="email_cad" required="required" type="email" placeholder="Exemplo@hotmail.com"/> 
+    </p>
+
+    <p>
+    <label for="sexo">Sexo*</label>  
+    <select th:field="*{sexo}" name="sexo" size=1> 
+    <option>Feminino </option>
+    <option>Masculino</option> 
+    </select>
+    </p> 
+
+
+    <p> 
+      <label for="senha_cad">Senha*</label>
+      <input th:field="*{senha}" id="senha_cad" name="senha_cad" required="required" type="password" placeholder="Digite sua senha"/>
+    </p>
+
+    <p> 
+      <input type="submit" value="Cadastrar"/> 
+    </p>
+
+    <p class="link">  
+      Já é cadastrado?
+      <a href="login.html"> Ir para Login </a>
+    </p>
+  </form>
+</div>
+
+<footer>
+    <div id="footercontainer"> </div>
+    <div id="rodape">﻿<p> Contate-nos - E-mail: LePereira8@hotmail.com</div>﻿</p>
+    <div id="rodape">﻿<p> © 2019 - Todos os Direitos Reservados.</div>﻿</p>
+    </footer>
+  
+</body>
+</html>

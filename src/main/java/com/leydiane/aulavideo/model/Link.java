@@ -1,4 +1,4 @@
-package model;
+package com.leydiane.aulavideo.model;
 
 import java.io.Serializable;
 

@@ -1,9 +1,9 @@
-package service;
+package com.leydiane.aulavideo.service;
 
 import java.util.List;
 
-import model.HistoricoLogin;
-import model.Usuario;
+import com.leydiane.aulavideo.model.HistoricoLogin;
+import com.leydiane.aulavideo.model.Usuario;
 
 public interface HistoricoLoginService {
 

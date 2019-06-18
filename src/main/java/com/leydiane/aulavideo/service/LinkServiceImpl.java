@@ -1,13 +1,13 @@
-package service;
+package com.leydiane.aulavideo.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import model.Link;
-import model.Usuario;
-import repository.LinkPersistencia;
+import com.leydiane.aulavideo.model.Link;
+import com.leydiane.aulavideo.model.Usuario;
+import com.leydiane.aulavideo.repository.LinkPersistencia;
 
 @Service
 public class LinkServiceImpl implements LinkService {
